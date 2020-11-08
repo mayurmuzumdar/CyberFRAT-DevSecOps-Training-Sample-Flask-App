@@ -5,7 +5,7 @@ pipeline {
      stage('Build Docker image') {
        steps {
               sh 'pwd'
-              sh 'docker build -t cyberfrat:$BUILD_NUMBER .'
+              sh 'sudo docker build -t cyberfrat:$BUILD_NUMBER .'
                 }
             }
         }
